@@ -14,15 +14,15 @@ if (fuelLevel >= 20000) {
    console.log('WARNING: Insufficient fuel!');
    launchReady = false;
 }
+let fuelSafety = launchReady;
 
-console.log("launchReady = ", launchReady);
+console.log("fuelSafety = ", fuelSafety);
 
-if (crewStatus && computerStatus === 'green'){
-   console.log('Crew & computer cleared.');
+if (fuelSafety && crewStatus && computerStatus === 'green'){
+   console.log('Cleared for liftoff!');
    launchReady = true;
 } else {
-   console.log('WARNING: Crew or computer not ready!');
+   console.log('WARNING: Not safe for liftoff!')
    launchReady = false;
-}
-
+   }
 console.log("launchReady = ", launchReady);
