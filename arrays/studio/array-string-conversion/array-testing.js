@@ -8,14 +8,18 @@ strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
-	let check = strings[0];
-	let check1 = console.log(protoArray1.includes(";"));
-	let check2 = console.log(protoArray1.includes(" "));
-	let output = check;
+	let check = strings[0].includes(",");
+	let checkSemi = strings[0].includes(";");
+	let checkSpace = strings[0].includes(" ");
+	let output = [];
+	console.log(check);
+	console.log(checkSemi);
+	console.log(checkSpace);
+
 	//TODO: 2. write the code required for this step
-if (protoArray1.includes(",")) {
-	let reversed = protoArray1.split(',').reverse().join(',');
-	console.log(reversed);
+if (strings[0].includes(",")) {
+	let output = strings[0].split(',').reverse().join(',');
+	console.log(output);
 }
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
@@ -23,32 +27,38 @@ if (protoArray1.includes(",")) {
 
 //3)
 function semiDash() {
-	let check = console.log(protoArray1.includes(";"));
+	let check = console.log(strings[0].includes(";"));
 	let output = [];
-	if (protoArray1.includes(";")) {
-		let hyphenStr = protoArray1.split(';').sort().join('-');
+	if (strings[0].includes(";")) {
+		let output = strings[0].split(';').sort().join('-');
+	console.log(output);
 	}
 //TODO: write the code required for this step
-
   
 	return output;
 }
 
 //4)
 function reverseSpaces() {
-	let check;
-	let output;
+	let check = console.log(strings[0].includes(" "));;
+	let output = [];
   //TODO: write the code required for this step
-
+if(strings[0].includes(" ")) {
+	let output = strings[0].split(' ').sort().reverse().join(' ');
+console.log(output);
+}
 	return output;
 }
 
 //5)
 function commaSpace() {
-	let check;
-	let output;
+	let check = console.log(strings[0].includes(", "));
+	let output = [];
 	//TODO: write the code required for this step
-  
+  if (strings[0].includes(", ")) {
+	let output = strings[0].split(',').trim().reverse().join(',');
+	console.log(output);
+  }
 	return output;
 }
 
