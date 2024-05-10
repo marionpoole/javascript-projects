@@ -6,19 +6,15 @@ let protoArray4 = "Comma-spaces, might, require, typing, caution";
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
 //2) 
-function reverseCommas() {
+function reverseCommas(commaString) {
 	//TODO: 1. create and instantiate your variables.
-	let check = strings[0].includes(",");
-	let checkSemi = strings[0].includes(";");
-	let checkSpace = strings[0].includes(" ");
+	let check = commaString;
 	let output = [];
 	console.log(check);
-	console.log(checkSemi);
-	console.log(checkSpace);
 
 	//TODO: 2. write the code required for this step
-if (strings[0].includes(",")) {
-	let output = strings[0].split(',').reverse().join(',');
+if (check.includes(",")) {
+	output = check.split(',').reverse().join(',');
 	console.log(output);
 }
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
@@ -26,11 +22,11 @@ if (strings[0].includes(",")) {
 }
 
 //3)
-function semiDash() {
-	let check = console.log(strings[0].includes(";"));
+function semiDash(dashString) {
+	let check = dashString;
 	let output = [];
-	if (strings[0].includes(";")) {
-		let output = strings[0].split(';').sort().join('-');
+	if (check.includes(";")) {
+		output = check.split(';').sort().join('-');
 	console.log(output);
 	}
 //TODO: write the code required for this step
@@ -39,24 +35,24 @@ function semiDash() {
 }
 
 //4)
-function reverseSpaces() {
-	let check = console.log(strings[0].includes(" "));;
+function reverseSpaces(spaceString) {
+	let check = spaceString;
 	let output = [];
   //TODO: write the code required for this step
-if(strings[0].includes(" ")) {
-	let output = strings[0].split(' ').sort().reverse().join(' ');
+if(check.includes(" ")) {
+	output = check.split(' ').sort().reverse().join(' ');
 console.log(output);
 }
 	return output;
 }
 
 //5)
-function commaSpace() {
-	let check = console.log(strings[0].includes(", "));
+function commaSpace(commaSpaceReverse) {
+	let check = commaSpaceReverse;
 	let output = [];
 	//TODO: write the code required for this step
-  if (strings[0].includes(", ")) {
-	let output = strings[0].split(',').trim().reverse().join(',');
+  if (check.includes(", ")) {
+	output = check.split(', ').reverse().join(',');
 	console.log(output);
   }
 	return output;
