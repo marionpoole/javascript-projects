@@ -2,6 +2,8 @@
 
 /* Your function should:
 a) If passed a number, return the tripled value.
+let f1 = function (practiceArgument)
+
 b) If passed a string, return the string “ARRR!”
 c) Be sure to test your function before moving on the next part. 
 */
@@ -12,4 +14,16 @@ b) Replace any strings with “ARRR!”
 c) Print the new array to confirm your work.
 */
 
+let f1 = function (practiceArgument) {
+    if (typeof practiceArgument === 'number') {
+        return practiceArgument * 3
+    }
+    if (typeof practiceArgument === 'string') {
+        return "ARRR!";
+    }
+}
+console.log(f1('3'));
+
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+let tripledNumsArrrStrings = arr.map(f1);
+    console.log(tripledNumsArrrStrings);
