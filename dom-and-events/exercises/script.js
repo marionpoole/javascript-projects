@@ -9,7 +9,7 @@ function init () {
     });
 
     missionAbort.addEventListener("mouseover", function() {
-        button.style.backgroundColor='#ff0000';
+        event.target.style.backgroundColor='#ff0000';
     });
 
     missionAbort.addEventListener("mouseout", function(event) {
