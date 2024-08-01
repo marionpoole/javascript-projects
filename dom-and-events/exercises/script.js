@@ -8,7 +8,7 @@ function init () {
         paragraph.innerHTML = 'Houston, we have liftoff!'
     });
 
-    missionAbort.addEventListener("mouseover", function() {
+    missionAbort.addEventListener("mouseover", function(event) {
         event.target.style.backgroundColor='#ff0000';
     });
 
